@@ -1,0 +1,15 @@
+{
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn run dev:prisma\" \"yarn run dev:remix:build && yarn run dev:remix:start\"",
+    "dev:prisma": "yarn workspace @rpc-postgres/prisma dev",
+    "dev:remix:build": "yarn workspace @rpc-postgres/remix build",
+    "dev:remix:start": "yarn workspace @rpc-postgres/remix start"
+  },
+  "packageManager": "yarn@4.4.1+sha256.920b4530755296dc2ce8b4351f057d4a26429524fcb2789d277560d94837c27e",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

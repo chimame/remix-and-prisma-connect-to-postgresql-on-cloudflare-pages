@@ -1,0 +1,25 @@
+{
+  "name": "@rpc-postgres/prisma",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.4.5",
+    "@cloudflare/workers-types": "^4.20240821.1",
+    "prisma": "^5.19.0",
+    "typescript": "^5.5.2",
+    "vitest": "1.5.0",
+    "wrangler": "^3.72.3"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg-worker": "^5.19.0",
+    "@prisma/client": "^5.19.0",
+    "@prisma/pg-worker": "^5.19.0"
+  }
+}

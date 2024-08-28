@@ -1,0 +1,6 @@
+name = "remix-rpc-postgres"
+
+[[services]]
+binding = "USER_SERVICE"
+service = "prisma-d1-rpc-postgres"
+entrypoint = "UserService"
